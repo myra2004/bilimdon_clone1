@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 from app.schemas.auth import *
 from app.models import *
-from app.dependency import db_dep
+from app.dependencies import db_dep
 from app.utils import *
 
 

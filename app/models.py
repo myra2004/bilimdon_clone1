@@ -12,7 +12,7 @@ class User(Base):
 
     id: Mapped[int] = mapped_column(primary_key=True)
     email: Mapped[str] = mapped_column(unique=True)
-    hashed_password: Mapped[str] = mapped_column(String(128))
+    password: Mapped[str] = mapped_column(String(128))
     username: Mapped[str] = mapped_column(String(32), unique=True)
     first_name: Mapped[str] = mapped_column(String(32), nullable=True)
     last_name: Mapped[str] = mapped_column(String(32), nullable=True)
