@@ -1,5 +1,7 @@
 from fastapi import APIRouter, HTTPException, status
 
+from typing import List
+
 from app.schemas.topic import *
 from app.dependencies import db_dep
 from app.models import *
